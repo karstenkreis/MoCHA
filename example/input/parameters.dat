@@ -1,0 +1,106 @@
+
+
+
+#NESTING 0
+
+Is it a H-AdResS simulation (1) or not (0)?
+#HADRESS_MC 1
+
+Is it a constant-lambda simulation (1) or not (0)?
+#CONST_LAMBDA 0
+
+Do we have to calculate the CG energy (1) or not (0)?
+#CGENERGY 1
+
+Do we have to calculate the AA energy (1) or not (0)?
+#AAENERGY 1
+
+Do we treat molecules as rigid objects (1) or not (0)?
+#RIGID 0
+
+Need electrostatics (1) or not (0)?
+#DO_ELECTRO 0
+
+Do we use free energy compensation?
+#USE_FEC 1
+
+Do we use POLYNOMIAL free energy compensation?
+#USE_POLY_FEC 0
+
+Are we performing a Kirkwood TI integration (1) or not (0)?
+#KIRKWOOD_TI 0
+
+Every how many outer sweeps do we have to change the value of lambda for TI?
+#KIRKW_STEPS 0
+
+Do we calculate the pressure?
+#DO_PRESSURE 0
+
+Do we calculate the radius of gyration?
+#DO_GYRATION 1
+
+How often do we print the trajectory? (outer sweeps)
+#PRINT_TRJ 100
+
+Are we using a spherical geometry (1) or not (0)?
+#HADRESS_SPHERE 0
+
+Are we using a slab geometry (x, y, z)?
+#HADRESS_SLAB x
+
+/** #HADRESS_SLAB 0 x before **/
+
+What is the neighbor list cutoff distance (including skin) ?
+#NB_CUTOFF 1.2
+
+What is the the half of the skin size?
+#NB_SKIN_HALF 0.15
+
+How many inner sweeps? FOR ACTUAL SIMULATION IT WAS '1'
+#INNER_SWEEPS 5
+
+How many equilibration sweeps?
+#EQUILIBRATE 0
+
+How many outer (simulation) sweeps?
+#OUTER_SWEEPS 1500
+
+What is the inverse temperature (in energy units)?
+#BETA 6.0136
+
+/** distance of the AA/H region surface from the box center.
+ * Sphere case: in units of the smallest box side
+ * Slab case: in units of the specified direction **/
+#RMIN 0.2727
+
+/** distance of the H/CG region surface from the box center.
+ * Sphere case: in units of the smallest box side
+ * Slab case: in units of the specified direction **/
+#RMAX 0.6364
+
+Standard deviation of the CoM displacement (DISTANCE units)
+#SIGMA_DISPL 0.10
+
+Standard deviation of the molecule rotation (RADIANT units)
+#SIGMA_ROTAT 0.5
+
+Standard deviation of the internal fluctuations (DISTANCE units)0.05 for actual simulations later...
+#SIGMA_BREATH 0.03
+
+Standard deviation for collapse/expansion moves (relative scaling units)
+#SIGMA_COLLAPSE 0.000
+
+Also calculate slabwise radius of gyration in x?
+#GYR_BINS 220
+
+Density calculation
+#DENSITY_X 220
+#DENSITY_Y 0
+#DENSITY_Z 0
+#DENSITY_R 0
+
+Do Path Integrals (1) or not (0)?
+#PATH_INTEGRAL 1
+
+Atomic Lambda (1) or not (0)?
+#ATOMIC_LAMBDA 1

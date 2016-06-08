@@ -17,14 +17,22 @@ namespace mocha_myrandom_nmspc
 {
 
     using namespace std;
-    
+
     random_device rd;
     mt19937 mt(rd());
     uniform_int_distribution<int> dist13(0,12);
     uniform_int_distribution<int> dist16(0,15);              // Hardcoded for 16 atoms...
     uniform_real_distribution<double> ddist(-1.0,1.0);
     uniform_real_distribution<double> ddist2(0.0,1.0);
-    uniform_int_distribution<int> distNmol(0,4963);          // Hardcoded for 4964 molecules...
+    //uniform_int_distribution<int> distNmol(0,4963);          // Hardcoded for 4964 molecules...
+
+    //uniform_int_distribution<int> distNmol(0,1457);            // The final system...
+
+    uniform_int_distribution<int> distNmol(0,1324);   // Box1 speedup
+    //uniform_int_distribution<int> distNmol(0,3973);   // Box2 speedup
+    //uniform_int_distribution<int> distNmol(0,6622);   // Box3 speedup
+    //uniform_int_distribution<int> distNmol(0,9271);   // Box4 speedup
+
     //uniform_int_distribution<int> distNmol(0,6618);
     //uniform_int_distribution<int> distNmol(0,8272);
     //uniform_int_distribution<int> distNmol(0,9927);
@@ -32,7 +40,7 @@ namespace mocha_myrandom_nmspc
     //uniform_int_distribution<int> distNmol(0,1356);
     //uniform_int_distribution<int> distNmol(0,827);
     //uniform_int_distribution<int> distNmol(0,9099);
-    
+
     double gasdev()
     {
         static int iset = 0;
